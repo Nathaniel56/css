@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<title> Solent Pizza</title>
+		
+		<style>
+		
+		
+		#divid {
+		
+		height: 300px;
+		width: 800px;
+		margin: auto;
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+		
+		}
+		
+		</style>
+	</head>
+    <body>
+        <div class="container">
+        <header> SOLENT PIZZA
+        <p style= "text-align:right; color:black; font-weight:bold;"> 
+    <script type="text/javascript">
+	<!--
+var date = new Date();
+var d  = date.getDate();
+var day = (d < 10) ? '0' + d : d;
+var m = date.getMonth() + 1;
+var month = (m < 10) ? '0' + m : m;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+
+document.write(day + "/" + month + "/" + year);
+ //--></script>
+ 
+   <script type="text/javascript">
+	function calculate() {
+	var el, i = 0;
+	var total = 0;
+	while(el = document.getElementsByName("pizzabase")[i++]) {
+	if(el.checked) { total= total + Number(el.value);}
+		}
+	//alert(total);
+	var div = document.getElementById('divid');
+	div.innerHTML = "Total : " +total ;
+		}
+    </script>
+        <!--java calucation-->
+            
+    <script type="text/javascript">
+	function calculate() {
+	var el, i = 0;
+	var total = 0;
+	while(el = document.getElementsByName("pizzabase")[i++]) {
+	if(el.checked) { total= total + Number(el.value);}
+		}
+	//alert(total);
+	var div = document.getElementById('divid');
+	div.innerHTML = "Total : " +total ;
+		}
+    </script>
+        <!--java calucation-->
+            
+            </p>
+        </header>
+        
+        <nav>
+				<ul>
+					<li><a class="hightlight" href="index.html"> HOME </a></li>
+                    <li><a class="hightlight" href="order.html"> ORDER</a></li>
+					<li><a class="hightlight" href="contact.html"> CONTACT US </a></li> 	
+				</ul>
+			</nav>
+      
+       
+		<article>
+		<div style="text-align: center;">
+		<h2></h2>
+            <form  onchange="main()" id="pizzaBase">
+		<fieldset>
+            <legend>Select your pizza size*</legend>
+		     
+                 <p><input id="pizza" type="checkbox"  name="pizzabase" data-price ="5.00" value="5" onclick="calculate()">Small <span class="price">£5.00</span></p>
+                 <p><input id="pizza" type="checkbox"  name="pizzabase" data-price ="7.00" value="7" onclick="calculate()">Medium <span class="price">£7.00</span></p>
+				<p><input id="pizza" type="checkbox"  name="pizzabase" data-price ="10.00" value="10" onclick="calculate()">Large <span class="price">£10.00</span></p>
+				<p><input id="pizza" type="checkbox" name="pizzabase" data-price ="12.00" value="12" onclick="calculate()">Extra Large <span class="price">£12.00</span></p>
+			</label>
+            </fieldset>	
+		<fieldset>
+				<legend>Select one or more toppings*:</legend>
+				<label for="topping"><p><input type="radio" name="topping"  value="cheese">Cheese <span class="price">£0.20</span></p>
+				<p><input type="radio" name="topping"  value="pepperoni">Pepperoni <span class="price">£0.20</span></p>
+				<p><input type="radio" name="topping"  value="chicken">Ham <span class="price">£0.20</span></p>
+				<p><input type="radio" name="topping"  value="pineapple">Pineapple <span class="price">£0.20</span></p>
+				</label>
+		</fieldset>	
+		<fieldset>
+				<legend>Extras</legend>
+				<p><input type="radio"   value="cheese">Chips <span class="price">£1.50</span></p>					
+		</fieldset>
+		<fieldset>
+            <legend>Delivery information</legend>
+			<p> Address: 
+			<input type ="text" > </p>
+			<p> Post Code :
+			<input type ="text" > </p>
+		</fieldset>
+			<input type="submit" value="Submit">      <input type="Reset" value="Reset">
+		</form>
+		</div>
+		<div id = "divid">
+		</div>
+        </article>
+
+<footer>
+</footer>
+        </div>
+    </body>
+</html>
